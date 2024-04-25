@@ -13,7 +13,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd NodeJS-RC-NODE-310324.git
+  cd NodeJS-RC-NODE-310324
 ```
 
 Install dependencies
