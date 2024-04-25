@@ -43,7 +43,7 @@ app.post('/customer/register', (req, res) => {
 });
 
 // Schedule to check birthdays and send emails every day at midnight
-const job = new cron.CronJob('* * * * *', () => {
+const job = new cron.CronJob('0 0 * * *', () => {
   const node = spawn('node', ['sendEmail.js', resolve('customers.json')]);
 
   node.stderr.on('data', (data) => {
